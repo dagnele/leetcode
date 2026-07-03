@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>30-Day LeetCode Plan</title>
+  <style>
+    :root { color-scheme: light dark; --accent: #2563eb; --muted: #6b7280; --line: #d1d5db; }
+    body { margin: 0; font: 16px/1.55 system-ui, -apple-system, Segoe UI, sans-serif; color: CanvasText; background: Canvas; }
+    main { max-width: 980px; margin: 0 auto; padding: 32px 20px 56px; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1; margin: 0 0 8px; letter-spacing: -0.04em; }
+    h2 { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 1.25rem; }
+    h3 { margin-bottom: 6px; }
+    p, li { max-width: 72ch; }
+    .lede { color: var(--muted); font-size: 1.08rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .card { border: 1px solid var(--line); border-radius: 14px; padding: 16px; background: color-mix(in srgb, Canvas, var(--accent) 4%); }
+    .card strong { color: var(--accent); }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.95rem; }
+    th, td { border-bottom: 1px solid var(--line); padding: 10px 8px; text-align: left; vertical-align: top; }
+    th { color: var(--muted); font-weight: 650; }
+    code { background: color-mix(in srgb, CanvasText 8%, Canvas); padding: 0.1rem 0.3rem; border-radius: 5px; }
+    .checklist li { margin: 8px 0; }
+    @media print { main { padding: 0; } .card { break-inside: avoid; } a { color: CanvasText; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>30-Day LeetCode Plan</h1>
+  <p class="lede">Goal: become more reliable at Medium problems with only 30 minutes per day. The win is pattern recognition plus clean review, not raw problem count.</p>
+
+  <section class="grid" aria-label="Daily loop">
+    <article class="card"><strong>5 min</strong><br>Recall yesterday's pattern, invariant, and one edge case before opening today's problem.</article>
+    <article class="card"><strong>18 min</strong><br>Attempt one focused problem. If stuck, write what state you track and what changes per step.</article>
+    <article class="card"><strong>7 min</strong><br>Review: summarize pattern, complexity, mistake, and retry date. Do not just read a solution.</article>
+  </section>
+
+  <h2>Month Structure</h2>
+  <table>
+    <thead><tr><th>Days</th><th>Focus</th><th>Target skill</th><th>Problem source</th></tr></thead>
+    <tbody>
+      <tr><td>1-5</td><td>Arrays, Hash Maps, Two Pointers</td><td>Turn brute force into stateful linear scans.</td><td>LeetCode 75 + NeetCode roadmap</td></tr>
+      <tr><td>6-10</td><td>Sliding Window, Prefix Sum, Stack</td><td>Maintain a window or monotonic structure with a clear invariant.</td><td>LeetCode 75</td></tr>
+      <tr><td>11-15</td><td>Binary Search, Linked Lists, Intervals</td><td>Define search space, bounds, and merge/split conditions.</td><td>LeetCode 75 + CP-Algorithms when needed</td></tr>
+      <tr><td>16-20</td><td>Trees, BFS, DFS</td><td>Choose traversal state and base cases without overcomplicating.</td><td>LeetCode 75</td></tr>
+      <tr><td>21-25</td><td>Graphs, Heaps, Greedy</td><td>Model dependencies, frontier order, and local-choice proof sketches.</td><td>LeetCode 75 + USACO Guide for gaps</td></tr>
+      <tr><td>26-30</td><td>Dynamic Programming + Mixed Review</td><td>Recognize state, recurrence, initialization, and retry old misses.</td><td>LeetCode 75 + retry log</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Problem Review Template</h2>
+  <ul class="checklist">
+    <li><code>Pattern</code>: What family is this problem really testing?</li>
+    <li><code>State</code>: What variables/data structures carry the useful information?</li>
+    <li><code>Invariant</code>: What remains true after each iteration or recursive call?</li>
+    <li><code>Failure</code>: What specifically blocked me?</li>
+    <li><code>Retry</code>: Try again in 2 days, then 7 days, without looking at the solution.</li>
+  </ul>
+
+  <h2>Rules</h2>
+  <ul>
+    <li>One problem per day is enough if the review is honest.</li>
+    <li>After 18 minutes stuck, take one hint or read only the editorial idea, then implement from memory.</li>
+    <li>Prefer Mediums, but use an Easy when the pattern itself is shaky.</li>
+    <li>Keep a retry list. Re-solving failures is where the month compounds.</li>
+  </ul>
+
+  <h2>Primary Source</h2>
+  <p>Use <a href="https://leetcode.com/studyplan/leetcode-75/">LeetCode 75</a> as the main problem list. Use <a href="https://cp-algorithms.com/">CP-Algorithms</a> only when you need deeper explanation of a technique.</p>
+
+  <p>Ask AL for a short lesson whenever a pattern feels fuzzy. Bring the problem name, your failed approach, and the exact line of reasoning that broke.</p>
+</main>
+</body>
+</html>
